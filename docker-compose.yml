@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./Backend
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    # volumes:
+    #  - ./Backend:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  frontend:
+    build:
+      context: ./Frontend/gps-app
+    command: npm start
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./Frontend/gps-app:/app
+    environment:
+      - CHOKIDAR_USEPOLLING=true
