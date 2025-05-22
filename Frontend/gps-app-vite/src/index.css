@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #1a1a1a;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,23 +21,50 @@ a {
 a:hover {
   color: #535bf2;
 }
+p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #fcfcfc52;
+  margin: 0;
+  
+}
+
+div {
+  border: 1px solid #fcfcfc5d;
+}
+
+strong {
+  display: flex;
+}
 
 body {
   margin: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
+h2 {
+  font-size: xx-large;
   line-height: 1.1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 8px;
   border: 1px solid transparent;
+  margin-top: 10px;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -54,10 +81,75 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+
+
+
+ul.device-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 900px;           /* más ancho para dos columnas */
+  background: #89b1bb;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dos columnas iguales */
+  gap: 0;                        /* puedes poner gap: 16px; si quieres separación */
+}
+
+ul.device-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  border-bottom: none;         /* quita la línea inferior */
+  border-right: 1px solid #628ca8; /* línea entre columnas */
+  border-bottom: 1px solid #628ca8; /* línea entre filas */
+  transition: background 0.2s;
+}
+
+ul.device-list li:last-child {
+  border-bottom: none;
+}
+
+ul.device-list li:hover {
+  background: #93a6c7;
+}
+
+ul.device-list a {
+  color: #154abe;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+ul.device-list a:hover {
+  text-decoration: underline;
+}
+
+ul.device-list li:nth-child(2n) {
+  border-right: none; /* quita la línea derecha en la segunda columna */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #14173a;
   }
   a:hover {
     color: #747bff;

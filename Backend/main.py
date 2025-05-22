@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from typing import List
+from typing import List, Optional
 from data import devices
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -18,6 +18,9 @@ class Device(BaseModel):
     id: int
     name: str
     status: str
+    description: Optional[str] = None
+    lat: Optional[float] = None
+    lng: Optional[float] = None
 
 @app.get("/devices", response_model=List[Device])
 def get_devices():

@@ -1,4 +1,17 @@
 devices = [
-    {"id": 1, "name": "GPS-001", "status": "activo"},
-    {"id": 2, "name": "GPS-002", "status": "inactivo"}
+    {"id": 1, "name": "GPS-001", "status": "activo", "description": "Rastreador principal instalado en el camión de carga de la ruta centro-norte. Permite monitoreo en tiempo real y alertas de velocidad.", "lat": 19.4326, "lng": -99.1332},
+    {"id": 2, "name": "GPS-002", "status": "inactivo", "description": "Unidad de reserva almacenada en bodega. No está asignada actualmente a ningún vehículo.", "lat": 20.6597, "lng": -103.3496},
+    {"id": 3, "name": "GPS-003", "status": "activo", "description": "Dispositivo asignado a la camioneta de reparto exprés en la zona metropolitana de Monterrey.", "lat": 25.6866, "lng": -100.3161},
+    {"id": 4, "name": "GPS-004", "status": "mantenimiento", "description": "Equipo en revisión técnica por fallas de batería. Se espera su reincorporación la próxima semana.", "lat": 21.1619, "lng": -86.8515},
+    {"id": 5, "name": "GPS-005", "status": "activo", "description": "Rastreador de la motocicleta de mensajería urgente, cubre entregas en el centro histórico.", "lat": 19.0414, "lng": -98.2063},
+    {"id": 6, "name": "GPS-006", "status": "activo", "description": "Dispositivo instalado en el vehículo de soporte técnico, utilizado para visitas a clientes.", "lat": 20.9674, "lng": -89.5926},
+    {"id": 7, "name": "GPS-007", "status": "inactivo", "description": "Equipo sin asignar, disponible para futuras expansiones de la flota.", "lat": 21.8853, "lng": -102.2916},
+    {"id": 8, "name": "GPS-008", "status": "activo", "description": "GPS de la camioneta de ventas, utilizada para recorridos en la zona industrial.", "lat": 19.2826, "lng": -99.6557},
+    {"id": 9, "name": "GPS-009", "status": "activo", "description": "Rastreador de camión de carga pesada, especializado en rutas de larga distancia.", "lat": 22.1565, "lng": -100.9855},
+    {"id": 10, "name": "GPS-010", "status": "mantenimiento", "description": "Dispositivo en proceso de calibración tras reporte de lecturas erróneas de ubicación.", "lat": 17.0732, "lng": -96.7266},
+    {"id": 11, "name": "GPS-011", "status": "activo", "description": "GPS asignado al vehículo ejecutivo para traslados de gerencia y visitas a sucursales.", "lat": 19.7045, "lng": -101.1941},
+    {"id": 12, "name": "GPS-012", "status": "activo", "description": "Unidad instalada en el vehículo de logística, encargado de la distribución de mercancía.", "lat": 18.9208, "lng": -99.2216},
+    {"id": 13, "name": "GPS-013", "status": "inactivo", "description": "Equipo retirado temporalmente por actualización de firmware y pruebas de laboratorio.", "lat": 20.5431, "lng": -100.3507},
+    {"id": 14, "name": "GPS-014", "status": "activo", "description": "Dispositivo de la camioneta de supervisión, realiza recorridos de control de calidad.", "lat": 19.1817, "lng": -96.1342},
+    {"id": 15, "name": "GPS-015", "status": "activo", "description": "GPS de la unidad de mantenimiento, encargado de atender emergencias en ruta.", "lat": 16.7536, "lng": -93.1156},
 ]
