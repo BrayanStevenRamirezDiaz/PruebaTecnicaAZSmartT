@@ -59,6 +59,11 @@ Este proyecto es una aplicación fullstack desarrollada por Brayan Steven Ramire
 
 ---
 
+## Imagenes de Referencia
+
+-  ![alt text](image.png)
+   ![alt text](image-1.png)
+
 ## Comandos útiles
 
 - **Detener los servicios:**
