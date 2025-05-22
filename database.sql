@@ -26,5 +26,3 @@ BEGIN
   WHERE id = @id;
 END;
 
--- Descripción (para incluir en README)
--- Para hacer un backup parcial puedes usar BACKUP DATABASE con FILEGROUP o tabla filtrada y luego RESTORE WITH REPLACE.
