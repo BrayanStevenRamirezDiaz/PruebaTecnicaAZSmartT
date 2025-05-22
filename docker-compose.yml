@@ -7,18 +7,17 @@ services:
     command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
     ports:
       - "8000:8000"
-    # volumes:
-    #  - ./Backend:/app
     environment:
       - PYTHONUNBUFFERED=1
 
   frontend:
     build:
-      context: ./Frontend/gps-app
-    command: npm start
+      context: ./Frontend/gps-app-vite
+    command: npm run dev -- --host 0.0.0.0
     ports:
-      - "3000:3000"
+      - "3000:5173"
     volumes:
-      - ./Frontend/gps-app:/app
+      - ./Frontend/gps-app-vite:/app
+      - /app/node_modules
     environment:
       - CHOKIDAR_USEPOLLING=true

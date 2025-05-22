@@ -6,8 +6,8 @@ export const DeviceProvider = ({ children }) => {
   const [devices, setDevices] = useState([]);
 
   useEffect(() => {
-    const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:8000";
-    console.log("API URL:", apiUrl); // Añade esta línea
+    const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:8000";
+   console.log("API URL:", apiUrl); // Añade esta línea
     fetch(`${apiUrl}/devices`)
       .then(res => res.json())
       .then(data => {
